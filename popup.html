@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quick Bookmark Saver</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="nav">
+    <button id="saveTab" class="active">Save</button>
+    <button id="viewTab">View All</button>
+  </div>
+
+  <div id="saveView" class="view active">
+    <h2>Save Bookmark</h2>
+    <input id="title" placeholder="Title" />
+    <input id="url" placeholder="URL" readonly />
+    <textarea id="description" placeholder="Add a short description..."></textarea>
+    <button id="saveBtn">Save Bookmark</button>
+    <p id="status"></p>
+  </div>
+
+  <div id="listView" class="view">
+    <div class="search-container">
+      <input type="text" id="searchBox" placeholder="Search bookmarks..." />
+    </div>
+    <div id="bookmarksList"></div>
+    <div id="emptyState" style="display:none;">
+      <p>No bookmarks yet. Start saving!</p>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

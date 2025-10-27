@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Quick Bookmark Saver",
+  "version": "2.0",
+  "description": "Bookmark URLs with CRUD operations.",
+  "permissions": ["activeTab", "storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  }
+}
