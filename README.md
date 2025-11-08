@@ -1,12 +1,10 @@
-# 🌟 Bookmark Extension
+# Bookmark Extension
 
-A clean and minimal **browser extension** that lets you save, view, and manage your favorite bookmarks easily — all stored locally in your browser.
+A simple browser extension to save and manage your bookmarks locally.
 
----
+## Setup
 
-## 🚀 Quick Setup
-
-### 1. Clone this repository
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/suhas991/Bookmark-extension.git
@@ -15,32 +13,26 @@ cd Bookmark-extension
 
 ### 2. Add to your browser
 
-#### 🧭 For Chrome / Edge:
+#### Chrome / Edge
 
-1. Open `chrome://extensions/`
-2. Enable **Developer Mode** (top-right)
+1. Go to `chrome://extensions/`
+2. Turn on **Developer Mode**
 3. Click **Load unpacked**
-4. Select the project folder (where `manifest.json` is located)
-5. The extension will appear in your toolbar 🎉
+4. Select the folder with `manifest.json`
 
-#### 🦊 For Firefox:
+#### Firefox
 
-1. Open `about:debugging#/runtime/this-firefox`
+1. Go to `about:debugging#/runtime/this-firefox`
 2. Click **Load Temporary Add-on**
 3. Select the `manifest.json` file
-4. The extension will load instantly ✅
 
----
+## Usage
 
-## 🧩 How It Works
+* Click the extension icon to open it.
+* Add new bookmarks using the popup.
+* View or delete saved bookmarks from the view page.
 
-* Click the **Bookmark Extension** icon in your toolbar.
-* Use the popup to **add** a new bookmark.
-* Open the view page to **see, edit, or delete** saved bookmarks.
-
----
-
-## 🧱 Folder Structure
+## Folder Structure
 
 ```
 Bookmark-extension/
@@ -51,59 +43,12 @@ Bookmark-extension/
 └── icon.png
 ```
 
-🗂️ **manifest.json** – Defines permissions and behavior
-💾 **popup.*** – Add bookmarks via popup
-📚 **view.*** – Manage or browse saved bookmarks
-✏️ **edit.*** – Modify existing bookmarks
+## Features
 
----
+* Save bookmarks locally
+* View, edit, or delete bookmarks
+* Simple and fast
 
-## ⚙️ Manifest Notes
+## License
 
-* `manifest_version`: 3 (for Chrome)
-* `permissions`: `storage`
-* `action`: defines popup and icon behavior
-
-Example snippet:
-
-```json
-{
-  "manifest_version": 3,
-  "name": "Bookmark Extension",
-  "version": "1.0",
-  "action": {
-    "default_popup": "popup.html",
-    "default_icon": "icon.png"
-  },
-  "permissions": ["storage"]
-}
-```
-
----
-
-## 🌈 Features
-
-✅ Save bookmarks locally
-✅ View, edit, and delete bookmarks
-✅ Lightweight and fast
-✅ Works offline
-
----
-
-## 🧭 Coming Soon
-
-* 🔄 Sync across devices
-* 🏷️ Tag or categorize bookmarks
-* 🔍 Search functionality
-* 💾 Import / Export bookmarks
-
----
-
-## 📜 License
-
-MIT License © 2025 **Suhas NH**
-Feel free to modify and use this project for your personal or commercial needs.
-
----
-
-> 💡 *Tip:* Pin the extension icon in your browser for quick access!
+MIT License © 2025 Suhas NH
